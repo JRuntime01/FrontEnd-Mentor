@@ -1,0 +1,43 @@
+@forward 'globals';
+$heading: #0e1936;
+$text: #c3c3ca;
+$bg: #d5e1ef;
+
+// p is 15px
+body {
+	font-family: 'Outfit', sans-serif;
+	background-color: $bg;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	background-color: white;
+	color: black;
+	padding: 2rem;
+	width: 320px;
+	border-radius: 1rem;
+	margin-inline: 3rem;
+
+	.imgWrapper {
+		border-radius: 1rem;
+		overflow: hidden;
+		margin-bottom: 1.3rem;
+	}
+
+	.contentWrapper {
+		text-align: center;
+
+		h2 {
+			margin-bottom: 1.5rem;
+			color: $heading;
+		}
+
+		p {
+			margin-bottom: 1.3rem;
+			font-size: 1.5rem;
+			color: $text;
+		}
+	}
+}
